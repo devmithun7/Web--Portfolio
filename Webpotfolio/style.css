@@ -1,0 +1,834 @@
+* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 130vh;
+  margin: 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 53vh;
+  align-items: center; /* This will center the items on the cross-axis (horizontally if the flex direction is column) */
+  flex-direction: column;
+  gap: 0; /* Remove gap if it's not needed */
+
+}
+
+.section__pic-container {
+  display: flex;
+  margin-top: -100px; /* Reduce the top margin to bring the text up */
+  justify-content: center; /* This will center the image horizontally */
+  align-items: center; /* This will center the image vertically */
+  height: auto; /* Adjust the height to fit the content */
+  margin-bottom: -10rem;
+  line-height: 0; /* This removes any extra line-height space below the image */
+
+}
+
+.section__pic-container img {
+  display: block; /* This ensures that the image is a block-level element and removes bottom space */
+  max-width: 70%; /* This will make the image responsive */
+  margin-top: -20rem; /* Reduce the top margin to bring the text up */
+  height: auto; /* This will maintain the aspect ratio of the image */
+  width: auto; /* Adjust this as needed to control the size of the image */
+  margin-bottom: -10rem; /* Removes any margin below the image */
+
+}
+
+
+.section__text {
+  align-self: center;
+  text-align: center;
+  margin-top: 30px; /* Reduce the top margin to bring the text up */
+}
+
+
+
+.section__text p {
+  font-weight: 600;
+  margin-top: 40px;; /* Reduce the top margin to bring the text up */
+
+}
+
+.section__text__p1 {
+  text-align: center;
+  margin-top: -100px; /* Reduce the top margin to bring the text up */
+  margin-bottom: 0; /* Removes any margin below the image */
+
+}
+
+.section__text__p11 {
+  text-align: center;
+  margin-top: -100px; /* Reduce the top margin to bring the text up */
+  margin-bottom: 0; /* Removes any margin below the image */
+
+}
+
+
+
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  margin-top: -10px; /* Reduce the top margin to bring the text up */
+  margin-bottom: 20px; /* Removes any margin below the image */
+
+}
+
+.section__text__p21 {
+  font-size: 1.75rem;
+  margin-top: -1000px; /* Reduce the top margin to bring the text up */
+  margin-bottom: 20px; /* Removes any margin below the image */
+
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 20px; /* Reduce the top margin to bring the text up */
+  margin-bottom: 20px; /* Removes any margin below the image */
+
+}
+
+.title1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 20px; /* Reduce the top margin to bring the text up */
+  margin-bottom: 20px; /* Removes any margin below the image */
+
+}
+
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 3rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+  padding-top: 80px; /* Adjust this value as needed, reduced from 200px */
+  height: auto; /* Changed from 100vh to auto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-containers {
+  gap: 1rem; /* Reduced gap */
+  margin-bottom: 1rem; /* Reduced margin */
+  margin-top: 1rem; /* Reduced margin */
+}
+
+.section-container {
+  gap: 2rem; /* Adjusted gap if needed */
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(163, 163, 163) 0.1rem solid;
+  text-align: center;
+  position: relative; /* Add this if not already present */
+  z-index: 10; /* Ensures the details container is above the image if they overlap */
+}
+
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin-top: -50px; /* Adjust this value as needed */
+  margin: auto 0;
+}
+
+
+:root {
+  --education: #008390;
+  --research: #69b7b4;
+  --experience: #8c2d67;
+  --years: #7c854e;
+  
+  --blue: #347EA1;
+  --light-blue: #33a8a5;
+  --purple: #81537F;
+  --white: #ffffff;
+  --dark-purple: #595775;
+  --light-purple: #ABA6BF; 
+  --muted-pink: #BF988F;
+  --brown: #583E2E;
+  --light-grey: #f4f4f4;
+  --med-grey: #ddd;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+  display: block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 27vw;
+  max-height: 250px;
+  background-color: white;
+  color: black;
+  text-align: left;
+  border: 1px solid #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 1px 3px 8px rgba(39, 44, 49, 0.3), 1px 3px 8px rgba(39, 44, 49, 0.03);
+  padding: 10px;
+  
+  /* Position the tooltip */
+  position: absolute;
+  top: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.section-header {
+  text-align: center; /* Centers the text horizontally */
+  width: 100%; /* Ensures the element spans the full container width */
+  /* Other styles such as margin, padding, etc., can be adjusted as needed */
+}
+
+
+.tooltip-h2 {
+	text-align: left;
+	margin-top: 0;
+  margin-bottom: 0;
+}
+
+.tooltip-h5 {
+  text-align: left;
+  color: grey;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.timeline-header {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto 10px auto;
+  background: transparent;
+  font-family: system-ui;
+}
+
+.legend {
+  display: flex;  
+  justify-content: flex-end;
+  background-color: transparent;
+/*   padding:  0; */
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: 20px;
+  font-family: system-ui;
+
+
+}
+
+.element {
+  display: inline-block;
+  padding: 10px 0;
+  margin-left: 10px;
+}
+
+.color {
+  display: inline-block;
+  border-radius: 2px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid transparent;
+  vertical-align: middle
+}
+
+.name {
+  height: 100%;
+  margin: auto;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.gantt {
+  font-family: system-ui;
+  width: 85%; /* This ensures the grid is only as wide as the content */
+  background: white;
+  border-radius: 10px;
+  box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.2),
+    1px 3px 8px rgba(39, 44, 49, 0.03);
+
+      grid-template-columns: 
+      [y17-jan] 1fr [y17-feb] 1fr [y17-mar] 1fr [y17-apr] 1fr [y17-may] 1fr [y17-jun] 1fr [y17-jul] 1fr [y17-aug] 1fr [y17-sep] 1fr [y17-oct] 1fr [y17-nov] 1fr [y17-dec] 1fr
+      [y18-jan] 1fr [y18-feb] 1fr [y18-mar] 1fr [y18-apr] 1fr [y18-may] 1fr [y18-jun] 1fr [y18-jul] 1fr [y18-aug] 1fr [y18-sep] 1fr [y18-oct] 1fr [y18-nov] 1fr [y18-dec] 1fr
+      [y19-jan] 1fr [y19-feb] 1fr [y19-mar] 1fr [y19-apr] 1fr [y19-may] 1fr [y19-jun] 1fr [y19-jul] 1fr [y19-aug] 1fr [y19-sep] 1fr [y19-oct] 1fr [y19-nov] 1fr [y19-dec] 1fr
+      [y20-jan] 1fr [y20-feb] 1fr [y20-mar] 1fr [y20-apr] 1fr [y20-may] 1fr [y20-jun] 1fr [y20-jul] 1fr [y20-aug] 1fr [y20-sep] 1fr [y20-oct] 1fr [y20-nov] 1fr [y20-dec] 1fr
+      [y21-jan] 1fr [y21-feb] 1fr [y21-mar] 1fr [y21-apr] 1fr [y21-may] 1fr [y21-jun] 1fr [y21-jul] 1fr [y21-aug] 1fr [y21-sep] 1fr [y21-oct] 1fr [y21-nov] 1fr [y21-dec] 1fr
+      [y22-jan] 1fr [y22-feb] 1fr [y22-mar] 1fr [y22-apr] 1fr [y22-may] 1fr [y22-jun] 1fr [y21-jul] 1fr [y22-aug] 1fr [y22-sep] 1fr [y22-oct] 1fr [y22-nov] 1fr [y22-dec] 1fr
+      [y23-jan] 1fr [y23-feb] 1fr [y23-mar] 1fr [y23-apr] 1fr [y23-may] 1fr [y23-jun] 1fr [y23-jul] 1fr [y23-aug] 1fr [y23-sep] 1fr [y23-oct] 1fr [y23-nov] 1fr [y23-dec] 1fr
+      [y24-jan] 1fr [y24-feb] 1fr [y24-mar] 1fr [y24-apr] 1fr [y24-may] 1fr [y24-jun] 1fr [y24-jul] 1fr [y24-aug] 1fr [y24-sep] 1fr [y24-oct] 1fr [y24-nov] 1fr [y24-dec] ;
+
+
+
+      display: grid;
+ 
+      grid-gap: 20px 0px;
+     margin-left: auto;  /* Center align the gantt chart */
+  margin-right: auto;   
+      
+}
+
+
+/* dividers */
+.divider {
+  border-left: 1px solid var(--med-grey); 
+  grid-row: 1 / span 8;
+  z-index: 1;
+}
+
+.legend {
+  justify-content: center; /* This will center the legend items if it's a flex container */
+  margin: 20px auto; /* Center the legend horizontally */
+  width: fit-content; /* Make the .legend only as wide as its content */
+}
+
+span.y-1 { grid-column: 12; }
+span.y-2 { grid-column: 24; }
+span.y-3 { grid-column: 36; }
+span.y-4 { grid-column: 48; }
+span.y-5 { grid-column: 60; }
+span.y-6 { grid-column: 72; }
+span.y-7 { grid-column: 72; }
+span.y-8 { grid-column: 72; }
+
+
+/* years */
+h3 {
+  text-align: center;
+  grid-row: 1;
+
+  color: white;
+  background-color: var(--years);
+  padding: 10px 0;
+  margin: 0;
+  border-top: 0 !important;
+}
+
+h3.h-y16 { grid-column: 1 / span 12; border-top-left-radius: 10px; }
+h3.h-y17 { grid-column: 13 / span 12; }
+h3.h-y18 { grid-column: 25 / span 12; }
+h3.h-y19 { grid-column: 37 / span 12; }
+h3.h-y20 { grid-column: 49 / span 12; }
+h3.h-y21 { grid-column: 61 / span 12; }
+h3.h-y22 { grid-column: 73 / span 12; }
+h3.h-y23 { grid-column: 85 / span 12; border-top-right-radius: 10px; }
+
+
+
+/* tasks */
+.gantt div {
+  color: white;
+  font-size: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  overflow-wrap: break-word;
+  z-index: 2;
+}
+
+@media only screen and (min-width: 600px) {
+  .gantt div { 
+    font-size: 12px;
+  }
+}
+
+/* specific task styles */
+.t-1 { background: var(--education); grid-row: 2;}
+.t-2 { background: var(--research); grid-row: 3;}
+.t-3 { background: var(--experience); grid-row: 4;}
+.t-4 { background: #6a478f; grid-row: 5;}
+.t-5 { background: #da6f2b; grid-row: 6;}
+.t-6 { background: #3d8bb1; grid-row: 7;}
+.t-7 { background: #e03f3f; grid-row: 8;}
+.t-8 { background: #59a627; grid-row: 9;}
+.t-9 { background: #4464a1; grid-row: 10;}
+
+/* EXPERIENCE SECTION STYLES */
+/* EXPERIENCE SECTION STYLES */
+
+#experience {
+  position: relative;
+  background-color: #f5f5f5; /* Light grey background for better contrast */
+  height: 80vh;
+  padding: 1rem; /* Add padding around the entire section */
+}
+
+.section__text__p1 {
+  color: #333; /* Dark grey color for paragraph text */
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.title {
+  color: #222; /* Darker grey color for titles */
+  text-align: center;
+  font-size: 2rem; /* Larger font size for the main title */
+  margin-bottom: 1rem; /* Spacing before and after the title */
+}
+
+.experience-details-container {
+  display: flex;
+  flex-direction: row; /* Align containers in a row */
+  flex-wrap: wrap; /* Allow containers to wrap */
+  justify-content: space-between; /* Evenly space between the items */
+  gap: 1rem; /* Smaller gap between containers */
+}
+
+.details-container {
+  background-color: #fff; /* White background for each details container */
+  border: 1px solid #ddd; /* Light grey border for the container */
+  border-radius: 8px; /* Rounded corners */
+  padding: 1rem; /* Padding inside each container */
+  flex-basis: calc(50% - 3rem); /* Calculate width for 2 items per row, considering the gap */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.experience-sub-title {
+  color: #333;
+  font-weight: bold;
+  font-size: 1.25rem; /* Smaller font size for subtitles */
+  margin-bottom: 1rem; /* Less space below the subtitle */
+}
+
+.article-container {
+  display: flex;
+  flex-direction: row; /* Align articles side by side */
+  flex-wrap: wrap; /* Allow articles to wrap within the container */
+  gap: 0.5rem; /* Reduced gap between articles */
+  justify-content: space-between; /* Space between the articles */
+}
+
+article {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  width: calc(50% - 0.5rem); /* Adjust width to fit 2 articles per row inside the container */
+}
+
+.icon {
+  width: 20px; /* Smaller icon size */
+  height: 20px; /* Smaller icon size */
+  margin-right: 0.5rem; /* Space after the icon */
+}
+
+article h3, article p {
+  padding: 5px; /* This will add space around the text inside h3 and p elements */
+  font-size: 0.85rem; /* Smaller font size for article titles and paragraphs */
+  margin: 0; /* No margin for titles */
+}
+
+article img.icon {
+  align-self: center; /* Vertically center the checkmark within its flex container */
+}
+
+
+
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
+  height: 120vh;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+  width: 80%; /* Reduce the width to desired percentage */
+  padding: 1rem; /* Adjust padding if necessary */
+  margin: 0 auto; 
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+/* PROJECTS SECTION */
+
+#certifications {
+   
+  position: relative;
+  height: 70vh;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-imgs {
+  border-radius: 2rem;
+  width: 20%;
+  height: 20%;
+  align-items: center;
+}
+
+.details-containers {
+  width: 50%; /* Adjust the width to your preference */
+  height: 50%; /* Height can be auto to maintain aspect ratio */
+  padding: 10px; /* Reduced padding */
+  margin: 10px auto; /* Reduced margin and centered */
+  gap: 1rem; /* Smaller gap between containers */
+
+}
+
+.image-container {
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically if needed */
+}
+
+.image-container img {
+  max-width: 100%; /* Make sure the image is responsive and fits the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom, 
+    rgba(36, 123, 160, 1), /* Deep blue at the top */
+    rgba(112, 193, 179, 0.7), /* Lighter teal in the middle */
+    rgba(178, 219, 191, 0) /* Almost transparent light blue at the bottom */
+  );
+
+  z-index: -1; /* Places it behind other content */
+}
+
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}

@@ -1,0 +1,148 @@
+/* For devices with a width of 600px or less */
+@media screen and (max-width: 600px) {
+  /* General body adjustments */
+  body {
+    font-size: 14px; /* Decrease the font size for mobile */
+  }
+
+  /* Navigation adjustments */
+  #desktop-nav {
+    display: none; /* Hide desktop navigation */
+  }
+
+  #hamburger-nav {
+    display: flex; /* Show hamburger navigation */
+  }
+
+  /* Profile Section */
+  #profile {
+    height: auto; /* Adjust height to content */
+    padding: 1rem 0; /* Add padding for spacing */
+    margin-bottom: 2rem; /* Reduce the bottom margin */
+  }
+
+  /* Adjust sections to fit content and align text properly */
+  section,
+  .section-container,
+  .about-containers,
+  .experience-details-container,
+  .details-container,
+  .contact-info-upper-container,
+  .btn-container {
+    height: auto; /* Set height to auto */
+    padding: 1rem; /* Add padding around the content */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align the child elements */
+    margin: 1rem 0; /* Add top and bottom margin for spacing */
+  }
+
+
+
+  /* Image adjustments */
+  .section__pic-container img,
+  .project-img,
+  .project-imgs {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Height set to auto to maintain aspect ratio */
+    margin-bottom: 1rem; /* Add bottom margin for spacing */
+  }
+
+  /* Text adjustments */
+  .section__text__p2,
+  .title,
+  .experience-sub-title {
+    font-size: 1.25rem; /* Adjust font size for titles and subtitles */
+  }
+
+  /* Button adjustments */
+  .btn {
+    width: auto; /* Set width to auto */
+    padding: 0.5rem 1rem; /* Adjust padding for buttons */
+    font-size: 0.9rem; /* Adjust font size for text within
+buttons */
+}
+
+
+
+
+
+  /* Specific styles for the certifications section */
+  #certifications {
+    padding-top: 2rem; /* Add top padding to ensure spacing from the previous content */
+    padding-bottom: 2rem; /* Add bottom padding for spacing */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align the child elements */
+  }
+
+  .details-container.color-container {
+    /* Adjust the details containers within the certifications section */
+    width: 90%; /* Set width to a percentage of the screen width */
+    margin: 0.5rem auto; /* Center the container with automatic margins and add vertical spacing */
+    padding: 1rem; /* Add padding within the containers */
+  }
+
+  /* Adjust the title size within the certifications section */
+  .experience-sub-title.project-title {
+    font-size: 1rem; /* Adjust font size for the project titles within the certifications section */
+    padding: 0.5rem 0; /* Add padding above and below the title for spacing */
+  }
+
+  /* Adjust the image size within the certifications section */
+  .project-imgs {
+    max-width: 100%; /* Ensure the image is not wider than the container */
+    height: auto; /* Adjust the height automatically based on the width */
+    margin-bottom: 1rem; /* Add some space below the image */
+  }
+
+  /* Adjust button styles within the certifications section */
+  .btn-container {
+    margin-top: 1rem; /* Add space above the
+
+    button */
+width: 100%; 
+}
+
+.btn.project-btn {
+font-size: 0.8rem; 
+padding: 10px 15px; 
+margin: 5px 0; 
+width: auto; 
+}
+
+.btn-container .btn {
+max-width: 250px; 
+}
+}
+
+
+#socials-container img,
+.contact-icon {
+height: 2rem; 
+width: auto; 
+}
+
+.text-container {
+padding: 0 5%; 
+text-align: justify; 
+}
+
+footer {
+padding: 2rem 1rem; 
+font-size: 0.8rem; 
+}
+
+.arrow {
+  display: none;
+  }
+  
+  .nav-links li a {
+  font-size: 1rem; 
+  }
+  
+  .hamburger-icon span {
+  height: 3px; 
+  }
+  
+
+
